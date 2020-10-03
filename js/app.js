@@ -37,6 +37,29 @@ function totalAmt(subTotal){
 }
 
 
+
+
+/*
+functions that return string 
+*/
+
+/*
+function makeBillTitle()
+*/
+function makeBillTitle(){
+  return 'Your Bill'; 
+}
+
+/*
+function makeBillSeparator()
+*/
+
+function makeBillSeparator(){
+  return '---------';
+}
+
+
+
 /* 
 data array 
 */
@@ -118,4 +141,13 @@ function totalAmt(subTotal) = number
 
 functions that return strings 
 
+
+function makeBillTitle()
+function makeBillSeparator()
+function makeDollar(cost)
+function makeLineItem(dish)
+
 */
+
+
+
