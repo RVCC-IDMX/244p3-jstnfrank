@@ -28,8 +28,13 @@ calculate tax at
 function taxAmt(num) {
   return num * 0.07;
 }
-
-
+/*
+function totalAmt(subTotal) = number
+add tax to subTotal and return total
+*/
+function totalAmt(subTotal){
+  return subTotal + taxAmt(subTotal); 
+}
 
 
 /* 
