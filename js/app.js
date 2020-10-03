@@ -1,6 +1,28 @@
+/*
+function dishTotalAmt(dish)
+
+take an object dish and return
+the product of cost * quant
+*/
+
+function dishTotalAmt(dish){
+  return dish.cost * dish.quantity;
+}
 
 /*
-calculate tax at 7%
+function dishTotalAmt(dish) = arrays 
+loop over array getting a subTotal 
+*/
+function dishTotalAmt(dish) {
+  let subTotal = 0; 
+  for (let i = 0; i< dishTotals.length; i++){
+    subTotal += dishTotals[i];
+  }
+  return subTotal; 
+}
+
+/*
+calculate tax at
 */
 
 function taxAmt(num) {
@@ -83,9 +105,10 @@ Here's an example:
 }
 functions that return numbers 
 
-function taxAmt(num) = number
+
 function dishTotalAmt(dish) = object
 function subTotalAmt(dishTotals) = array
+function taxAmt(num) = number
 function totalAmt(subTotal) = number
 
 functions that return strings 
