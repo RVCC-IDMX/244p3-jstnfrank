@@ -1,51 +1,48 @@
-function totalCharges(dishes) {
-  let total = 0;
-  for (let i = 0; i < dishes.length; i++) {
-    total += dishes[i].cost;
-  }
-  return total;
-}
+
+/*
+calculate tax at 7%
+*/
 
 function taxAmt(num) {
   return num * 0.07;
 }
 
-function checkPlease(dishes) {
-  let str = `Your Bill
----------
-`;
-  for (let i = 0; i < dishes.length; i++) {
-    str += `${dishes[i].food}: $${dishes[i].cost}
-`;
-  }
-  return str;
-}
+
+
+
+/* 
+data array 
+*/
 
 const orderedMeal = [];
 
 orderedMeal.push({
   food: 'Hamburger',
   cost: 3.49,
+  quantity:5, 
 });
 
 orderedMeal.push({
   food: 'Fries',
   cost: 1.29,
+  quantity:3, 
 });
 
 orderedMeal.push({
   food: 'Soda',
   cost: 1.79,
+  quantity:4, 
 });
 
 orderedMeal.push({
   food: 'Sundae',
   cost: 1.99,
+  quantity:1, 
 });
 
-console.log(orderedMeal);
 
-console.log(checkPlease(orderedMeal));
+
+
 
 /*
 
@@ -84,6 +81,13 @@ Here's an example:
   cost: 3.49,
   quantity: 5,
 }
+functions that return numbers 
 
+function taxAmt(num) = number
+function dishTotalAmt(dish) = object
+function subTotalAmt(dishTotals) = array
+function totalAmt(subTotal) = number
+
+functions that return strings 
 
 */
