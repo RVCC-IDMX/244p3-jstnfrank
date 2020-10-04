@@ -1,0 +1,19 @@
+{
+  "name": "justin",
+  "version": "1.0.0",
+  "description": "package for Justin",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RVCC-IDMX/244p3-jstnfrank.git"
+  },
+  "author": "Justin Frank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RVCC-IDMX/244p3-jstnfrank/issues"
+  },
+  "homepage": "https://github.com/RVCC-IDMX/244p3-jstnfrank#readme"
+}
