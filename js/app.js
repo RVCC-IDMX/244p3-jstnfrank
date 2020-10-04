@@ -13,7 +13,7 @@ function dishTotalAmt(dish){
 function dishTotalAmt(dish) = arrays 
 loop over array getting a subTotal 
 */
-function dishTotalAmt(dish) {
+function subTotalAmt(dishTotals) {
   let subTotal = 0; 
   for (let i = 0; i< dishTotals.length; i++){
     subTotal += dishTotals[i];
