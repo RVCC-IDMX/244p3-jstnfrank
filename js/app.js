@@ -150,9 +150,9 @@ dishMenu.push({
        */
       const bill = document.querySelector(' .bill');
       function writeToPage(str) {
-        let pre = document.createElement('pre');
+        let p = document.createElement('p');
         p.innerText = str;
-        bill.appendChild(pre);
+        bill.appendChild(p);
       }
       return writeToPage;
      }
