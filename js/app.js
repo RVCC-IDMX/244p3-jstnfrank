@@ -18,8 +18,8 @@ const dishTotalAmt = (dish) => dish.cost * dish.quantity;
 */
 const subTotalAmt = (dishTotals) =>
 {
-  dishTotals.reduce((sum,current) => sum + current, 0); 
-}
+  return dishTotals.reduce((sum,current) => sum + current, 0); 
+};
 
 
 /*
