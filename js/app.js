@@ -12,7 +12,7 @@ take an object dish and return
 the product of cost * quant
 */
 
-const dishTotalAmt = (dish) => dish.cost * dish.quantity,
+const dishTotalAmt = (dish) => dish.cost * dish.quantity;
 
 /*
 */
@@ -136,7 +136,7 @@ dishMenu.push({
        return dishMenu;
      }
 
-     const orderedMeal = takeAnOrder(disjMenu);
+     const orderedMeal = takeAnOrder(dishMenu);
 
      /*
      function writeOut that returns
@@ -151,7 +151,7 @@ dishMenu.push({
       const bill = document.querySelector(' .bill');
       function writeToPage(str) {
         let pre = document.createElement('pre');
-        pre.innerText = str;
+        p.innerText = str;
         bill.appendChild(pre);
       }
       return writeToPage;
@@ -167,9 +167,9 @@ dishMenu.push({
      create data for output
      */
 
-     let makeDishTotalsArray = makeDishTotalsArray(orderedMeal);
+     let dishTotalsArray = makeDishTotalsArray(orderedMeal);
 
-     let subTotal = subTotalAmt(makeDishTotalsArray);
+     let subTotal = subTotalAmt(dishTotalsArray);
 
      let tax = taxAmt(subTotal);
 
@@ -182,6 +182,7 @@ dishMenu.push({
     console.log(makeBillSeperator());
     console.log(makeLineItems(orderedMeal));
     console.log(makeBillSeperator());
+    console.log(subTotal);
     console.log(makeSubtotalLine(subTotal));
     console.log(makeTaxLine(tax));
     console.log(makeBillSeperator());
