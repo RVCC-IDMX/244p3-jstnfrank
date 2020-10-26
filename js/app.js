@@ -148,7 +148,7 @@ dishMenu.push({
        document.querySelector is expensive call
        use closure to do only once
        */
-      const bill = document.querySelector(' .bill');
+      const bill = document.querySelector('.bill');
       function writeToPage(str) {
         let p = document.createElement('p');
         p.innerText = str;
