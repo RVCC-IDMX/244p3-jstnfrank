@@ -85,9 +85,9 @@ const makeLineItems = (dishes) =>
 dishes.reduce((sum,current)=> sum + makeLineItem(current), '');
 
 const makeSubtotalLine = (subTotal) =>
-'Subtotal         ' + makeDollar(subTotal);
+'Subtotal      ' + makeDollar(subTotal);
 
-const makeTaxLine = (tax) => '+ 7% tax          ' + makeDollar(tax);
+const makeTaxLine = (tax) => '+ 7% tax      ' + makeDollar(tax);
 
 const makeTotalLine = (total) => 'Total         ' + makeDollar(total);
 
@@ -103,17 +103,17 @@ cost: 3.49,
 });
 
 dishMenu.push({
-  food: 'Fries: ',
+  food: 'Fries:     ',
   cost: 1.29,
   });
 
   dishMenu.push({
-    food: 'Soda: ',
+    food: 'Soda:      ',
     cost: 1.79,
     });
 
     dishMenu.push({
-      food: 'Sundae: ',
+      food: 'Sundae:    ',
       cost: 1.99,
       });
 
@@ -142,6 +142,18 @@ dishMenu.push({
      function writeOut that returns
      function writeToPage()
      */
+    function replaceAll(string, search, replace) {
+      /* 
+       Chain together 2 methods
+       Split: a string method to split a string into an array of substrings
+       Join: an array method to create and return a new string by concatenating 
+       all of the elements in an array 
+       https://dmitripavlutin.com/replace-all-string-occurrences-javascript/
+      
+      */
+      return string.split(search).join(replace);
+    }
+    
 
      function writeOut(){
        /*
@@ -151,6 +163,7 @@ dishMenu.push({
       const bill = document.querySelector('.bill');
       function writeToPage(str) {
         let p = document.createElement('p');
+         str = replaceAll(str, ' ', '\xa0');
         p.innerText = str;
         bill.appendChild(p);
       }
